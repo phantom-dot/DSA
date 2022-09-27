@@ -21,7 +21,8 @@ public class bubblesort {
             }
         }
 
-
+        var value=7;
+        System.out.println(value);
         System.out.println(Arrays.toString(arr));
     }
 }

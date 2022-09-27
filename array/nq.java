@@ -1,6 +1,7 @@
 package array;
 
-/* Java program to solve N Queen
+/* Author -   sahil
+Java program to solve N Queen
 Problem using backtracking */
 import java.util.*;
 class nq {
@@ -55,10 +56,18 @@ class nq {
     // Driver code
     public static void main(String[] args)
     {
-        int n = 90;
+        double s= System.nanoTime();
+        int n =  15;
+
 
         List<List<Integer> > res = nQueen(n);
         System.out.println(res);
+        System.out.println("total number of solutions are "+res.size());
+
+        double e=System.nanoTime();
+        System.out.println("execution time is "+(e-s)/1000000000 +"sec");
+
+
     }
 }
 
